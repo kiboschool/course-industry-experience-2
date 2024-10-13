@@ -1,0 +1,312 @@
+# Visit https://docs.google.com/document/d/1Hm41CGu0pZrGB7_XrPZR50DU7DXvqeC6aZuaTLpRLlo/edit 
+# for full details about the contents of the course.yml file. 
+# 
+# - Top level details of the course: 
+#     name: course name
+#     code: course code
+#     term: when is this offered
+#     about_path: the path to the course overview md file
+#     image_path: the path to an image to use as the course header
+#
+# - Units
+#     name: name of the unit (e.g. Week 1: Introduction)
+#     activities: list of the activities in the Unit
+# 
+# - Activities
+#     name: name of the activity
+#     path: where to find the file for the activity
+#     workload: how many minutes the activity is estimated to take
+#     type: `lesson` or `assignment`
+#     kind: airlock resource kind: 
+#       `GENERAL`, `MEETING`, `PUBLICATION`, `PUBLICATION_REVIEWED`, 
+#       `ASSIGNMENT`, `ASSIGNMENT_SUMMATIVE`
+#     publish: Is this ready, or still a draft? Publish can be set to:
+#       - `true` (publish to students now)
+#       - `false` (do not publish to students), default value if not specified
+#       - date, formatted like `2023-10-25` (publish to students on that date) 
+#     due: When is the due date for the activity (e.g. 2023-12-27)
+#     grade_weight: what percent of the course grade is this 
+#       (for now, only for assignments).  Must sum to 100.
+
+name: Industry Experience 2
+code: IDS004
+term: July-2024
+about_path: src/overview/introduction.md
+image_path: src/sky-handshake.png
+units:
+  - name: Course Overview
+    activities:
+      - name: Introduction
+        path: src/overview/introduction.md
+        type: lesson
+        kind: GENERAL
+        workload: 15
+        publish: true
+      - name: Live Classes
+        path: src/overview/live-classes.md
+        type: lesson
+        kind: GENERAL
+        workload: 15
+        publish: true
+      - name: Assessments
+        path: src/overview/assessments.md
+        type: lesson
+        kind: GENERAL
+        workload: 15
+        publish: true
+      - name: Getting Help
+        path: src/overview/help.md
+        type: lesson
+        kind: GENERAL
+        workload: 15
+        publish: true
+      - name: Academic Integrity
+        path: src/overview/academic-integrity.md
+        type: lesson
+        kind: GENERAL
+        workload: 15
+        publish: true
+  - name: The Road Ahead
+    activities:
+      - name: Introduction
+        path: src/road-ahead/introduction.md
+        type: lesson
+        kind: GENERAL
+        workload: 15
+        publish: '2024-01-22'
+        due: '2024-02-02'
+      - name: Career Coach
+        path: src/road-ahead/1-motivation.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: '2024-01-22'
+        due: '2024-02-02'
+      - name: The Rocky Road Ahead
+        path: src/road-ahead/career-wall.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: '2024-01-22'
+        due: '2024-02-02'
+      - name: Own Your Career Development
+        path: src/road-ahead/careerdevelopment.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: '2024-01-22'
+        due: '2024-02-02'
+      - name: "Find Your 'I': Strengths and Weaknesses"
+        path: src/road-ahead/find-your-i.md
+        type: lesson
+        kind: GENERAL
+        workload: 90
+        publish: '2024-01-22'
+        due: '2024-02-02'
+      - name: "Revisit Your Why: Articulate Your Purpose"
+        path: src/road-ahead/find-your-why.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: '2024-01-22'
+        due: '2024-02-02'
+      - name: Wrap Up
+        path: src/road-ahead/wrapup.md
+        type: lesson
+        kind: GENERAL
+        workload: 15
+        publish: '2024-01-22'
+        due: '2024-02-02'
+      - name: Personal SWOT and Goals
+        path: src/road-ahead/assignment-1.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 240
+        grade_weight: 1
+        publish: '2024-01-22'
+        due: '2024-02-06'
+  - name: Applying
+    activities:
+      - name: Introduction
+        path: src/storytelling/introduction.md
+        type: lesson
+        kind: GENERAL
+        workload: 15
+        publish: '2024-01-22'
+        due: '2024-02-09'
+      - name: Career Narrative
+        path: src/storytelling/careernarrative.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: '2024-01-22'
+        due: '2024-02-09'
+      - name: The Power of Storytelling
+        path: src/storytelling/storytelling.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: '2024-01-22'
+        due: '2024-02-09'
+      - name: The Perils of Using AI
+        path: src/storytelling/ai-perils.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: '2024-01-22'
+        due: '2024-02-09'
+      - name: Powerful Introductions
+        path: src/storytelling/powerful-intros.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: '2024-01-22'
+        due: '2024-02-09'
+      - name: "Application materials"
+        path: src/storytelling/assignment-materials.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 180
+        grade_weight: 1
+        publish: '2024-01-22'
+        due: '2024-03-15'
+      - name: "Career conversation"
+        path: src/storytelling/assignment-conversation.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 60
+        grade_weight: 1
+        publish: '2024-01-22'
+        due: '2024-03-29'
+      - name: "Application tracker"
+        path: src/storytelling/assignment-tracker.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 480
+        grade_weight: 2
+        publish: '2024-01-22'
+        due: '2024-05-28'
+  - name: Your Network
+    activities:
+      - name: Introduction
+        path: src/networking/introduction.md
+        type: lesson
+        kind: GENERAL
+        workload: 15
+        publish: '2024-02-26'
+        due: '2024-03-05'
+      - name: Career Coach
+        path: src/networking/motivation.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: '2024-02-26'
+        due: '2024-03-05'
+      - name: Connections Matter
+        path: src/networking/connections.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: '2024-02-26'
+        due: '2024-03-05'
+      - name: Network Naturally
+        path: src/networking/how-to.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: '2024-02-26'
+        due: '2024-03-05'
+      - name: Networking with Professionals
+        path: src/networking/professionals.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: '2024-02-26'
+        due: '2024-03-05'
+      - name: Informational Interviews
+        path: src/networking/informational-interview.md
+        type: lesson
+        kind: GENERAL
+        workload: 30
+        publish: '2024-02-26'
+        due: '2024-03-05'
+      - name: Peer Reviewed Research
+        path: src/networking/research-article.md
+        type: lesson
+        kind: GENERAL
+        workload: 60
+        publish: '2024-02-26'
+        due: '2024-03-05'
+      - name: Wrap Up
+        path: src/networking/wrap-up.md
+        type: lesson
+        kind: GENERAL
+        workload: 15
+        publish: '2024-02-26'
+        due: '2024-03-05'
+      - name: "Networking Event" 
+        path: src/networking/assignment-event.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 120
+        grade_weight: 1
+        publish: '2024-02-26'
+        due: '2024-04-02'
+      - name: "Informational Interview" 
+        path: src/networking/assignment-interview.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 120
+        grade_weight: 1
+        publish: '2024-02-26'
+        due: '2024-04-16'
+  - name: Work Experience
+    activities:
+      - name: "Mock Coaching Reflection" 
+        path: src/work-experience/mock-coaching-reflection.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 120
+        grade_weight: 1
+        publish: false
+        due: '2024-06-04'
+      - name: "Internship Self-evaluations" 
+        path: src/work-experience/self-evaluations.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 120
+        grade_weight: 15
+        publish: false
+        due: '2024-09-06' 
+      - name: "Supervisor evaluation" 
+        path: src/work-experience/supervisor-evaluation.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 120
+        grade_weight: 25
+        publish: false
+        due: '2024-09-13'
+      - name: "Final Essay" 
+        path: src/work-experience/final-essay.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 120
+        grade_weight: 50
+        publish: false
+        due: '2024-09-13'
+  - name: Live Sessions
+    activities:
+      - name: "Workshop 1" 
+        path: src/live-sessions/workshop-1.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 120
+        grade_weight: 1
+        publish: false
+      - name: "Workshop 2" 
+        path: src/live-sessions/workshop-2.md
+        type: assignment
+        kind: ASSIGNMENT
+        workload: 120
+        grade_weight: 1
+        publish: false
